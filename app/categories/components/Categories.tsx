@@ -41,7 +41,7 @@ const Categories = () => {
     >
       {/* <CategoriesSearchBox /> */}
       {/* <SearchBox /> */}
-      <Typography variant="h2" sx={{ fontWeight: "400" }}>
+      <Typography variant="h2" sx={{ fontWeight: "400" , fontSize: { xs: "24px", sm: "24px", md: "34px" }, paddingX: {xs: 2, sm: 0}}}>
         All categories provided by NarutoDB
       </Typography>
       <Grid
