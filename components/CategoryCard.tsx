@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import { Box, CardActionArea } from "@mui/material";
 import VanillaTilt from "vanilla-tilt";
 import LinesEllipsis from "react-lines-ellipsis";
+import Image from "next/image";
 
 type PropsType = {
   image: string;
@@ -45,13 +46,15 @@ export default function CategoryCard({ image, title, desc }: PropsType) {
       }}
     >
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          sx={{ objectFit: "cover" }}
-          image={image}
-          alt={title}
-        />
+        <CardMedia sx={{ position: "relative", height: "140px" }}>
+          <Image
+            src={image}
+            fill
+            style={{ objectFit: "cover" }}
+            alt={title}
+            sizes="300px"
+          />
+        </CardMedia>
         <CardContent
           sx={{
             height: "172.5px",
