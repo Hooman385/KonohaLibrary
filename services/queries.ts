@@ -7,7 +7,7 @@ const getCharactersFromMyApi = async (
   queryString: string
 ) => {
   const result = await axios.get(
-    `http://localhost:3000/api/characters?page=${page}&${queryString}`
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/characters?page=${page}&${queryString}`
   );
   return result.data;
 };

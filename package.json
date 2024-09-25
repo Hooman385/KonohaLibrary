@@ -27,6 +27,7 @@
     "react-dom": "^18",
     "react-lines-ellipsis": "^0.15.4",
     "react-loader-spinner": "^6.1.6",
+    "sharp": "^0.33.5",
     "use-debounce": "^10.0.3",
     "uuid": "^10.0.0",
     "vanilla-tilt": "^1.8.1"
